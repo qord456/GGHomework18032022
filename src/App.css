@@ -2,6 +2,10 @@
   text-align: center;
 }
 
+.container {
+  margin: 5px auto;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -35,14 +39,25 @@
 
 .album img{
   width: 150px;
+  height: 150px;
+  size: cover;
   border-radius: 10px;
+}
+
+.albumLists {
+  margin: 10px auto;
+  text-align: center;
+  width: 400px;
+
 }
 
 .album {
   border: solid 5px black;
   border-radius: 10px;
   width: 150px;
-  margin: 50px auto;
+  height: 270px;
+  margin: 50px 20px;
+  float: left;
 }
 
 .album p{
@@ -52,13 +67,18 @@
 
 button{
   margin-bottom: 10px;
+  
 }
 
 html {
   background-color: bisque;
+}
 
-
-
+.link{
+  font-size: 16px;
+  text-decoration: none;
+  color: black;
+  
 }
 @keyframes App-logo-spin {
   from {
