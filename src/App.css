@@ -47,7 +47,7 @@
 .albumLists {
   margin: 10px auto;
   text-align: center;
-  width: 400px;
+  width: 1000px;
 
 }
 
@@ -79,6 +79,10 @@ html {
   text-decoration: none;
   color: black;
   
+}
+
+table {
+  font-size: 12px;
 }
 @keyframes App-logo-spin {
   from {
