@@ -2,6 +2,10 @@ import './App.css';
 import './albumData';
 import MyExtract from './components/components'
 import MyExtractingAfter from './components/components';
+import ObjectAlbum from './components/dataAlbum';
+import './components/WebApp'
+import WebApp from './components/WebApp';
+import handleLogin from './components/WebApp';
 
 function App() {
   return (
@@ -19,9 +23,16 @@ function App() {
           <p></p>
           <button id="submit" type="submit">Create</button>
         </div>
+        <button onClick={handleLogin}>Link Spotify</button>
         
+    <br></br>
+    <div class="buttonIn">
+        <input type="text" id="enter"></input>
+        <button id="clear">Search</button>
+    </div>
       </div>
       <div className="container">
+        
         <div className="albumLists">
           <div className="album">
             <img src="https://c.tenor.com/JniFp1Q_5ToAAAAC/soodam-secret-number.gif"></img>
@@ -29,16 +40,21 @@ function App() {
             <p>Artist: 시크릿넘버</p>
             <button id='tombol'>Select</button>
           </div>
-          <MyExtractingAfter
+          <ObjectAlbum />
+          {/* <MyExtractingAfter
             artistName="Queen"
             nameHref="https://open.spotify.com/artist/1dfeR4HaWDbWqFHLkxsg1d"
             albumPictSrc="https://i.scdn.co/image/ab67616d0000b273e8b066f70c206551210d902b"
             albumTitle="Bohemian Rhapsody"
             albumHref="https://open.spotify.com/track/3z8h0TU7ReDPLIbEnYhWZb"
-            playlistHref="https://open.spotify.com/album/6i6folBtxKV28WX3msQ4FE"/>
+            playlistHref="https://open.spotify.com/album/6i6folBtxKV28WX3msQ4FE"/> */}
+          
         </div>
+        
       </div>
     </div>
+  
+  
     
 
   );

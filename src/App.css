@@ -45,19 +45,22 @@
 }
 
 .albumLists {
-  margin: 10px auto;
+  margin-left: 150px;
   text-align: center;
-  width: 1000px;
+  width: auto;
+  
 
 }
 
 .album {
   border: solid 5px black;
   border-radius: 10px;
-  width: 150px;
-  height: 270px;
+  width: 300px;
+  height: 300px;
   margin: 50px 20px;
   float: left;
+  align-items: center;
+  
 }
 
 .album p{
@@ -83,7 +86,41 @@ html {
 
 table {
   font-size: 12px;
+  margin: 0 auto;
 }
+
+.buttonIn {
+  width: 300px;
+  position: relative;
+  margin: 0px auto;
+}
+
+#enter {
+  margin: 0px auto;
+  padding: 0px;
+  width: 100%;
+  outline: none;
+  height: 30px;
+  border-radius: 5px;
+}
+
+#clear {
+  position: absolute;
+  top: 0;
+  border-radius: 3px;
+  right: 0px;
+  z-index: 2;
+  border: none;
+  top: 2px;
+  height: 30px;
+  cursor: pointer;
+  color: white;
+  background-color: #da7494;
+  transform: translateX(2px);
+  font-weight: bold;
+  
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

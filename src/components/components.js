@@ -1,6 +1,3 @@
-import data from '../albumData';
-
-
 
 const UserInfo = ({ avatarSrc, name }) => (
     <div className="user-info">
