@@ -6,14 +6,15 @@ import ObjectAlbum from './components/dataAlbum';
 import './components/WebApp'
 import WebApp from './components/WebApp';
 import handleLogin from './components/WebApp';
+import spotifySearch from './components/searchspotify';
 
 function App() {
   return (
     <div className="App">
       <div className="container">
         <h1>CREATE PLAYLIST</h1>
-        <div className="form">
-          <p>Title</p>
+        <form>
+        <p>Title</p>
           <input id="inputTitle" placeholder="Insert playlist title" />
           <p>Description</p>
           <textarea
@@ -21,9 +22,9 @@ function App() {
             placeholder="Insert playlist description"
           ></textarea>
           <p></p>
-          <button id="submit" type="submit">Create</button>
-        </div>
-        <button onClick={handleLogin}>Link Spotify</button>
+          <button onClick={handleLogin} id="submit" type="submit">Create</button>
+        </form>
+        <button onClick={handleLogin}>Link to Spotify</button>
         
     <br></br>
     <div class="buttonIn">
@@ -38,7 +39,7 @@ function App() {
             <img src="https://c.tenor.com/JniFp1Q_5ToAAAAC/soodam-secret-number.gif"></img>
             <p>Title: Who Dis'</p>
             <p>Artist: 시크릿넘버</p>
-            <button id='tombol'>Select</button>
+            {/* <spotifySearch /> */}
           </div>
           <ObjectAlbum />
           {/* <MyExtractingAfter
